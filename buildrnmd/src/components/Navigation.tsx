@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
 import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import BuildRNMD from "../../public/BuildRNMD.jpeg";
 import {
   AppBar,
   Toolbar,
@@ -28,11 +29,26 @@ import PeopleIcon from "@mui/icons-material/People";
 
 const navItems = [
   { href: "/", label: "Home", icon: HomeIcon, color: "#0d9488" },
-  { href: "/careers", label: "Explore Careers", icon: FavoriteIcon, color: "#db2777" },
-  { href: "/toolkit", label: "Build Your Application", icon: DescriptionIcon, color: "#2563eb" },
+  {
+    href: "/careers",
+    label: "Explore Careers",
+    icon: FavoriteIcon,
+    color: "#db2777",
+  },
+  {
+    href: "/toolkit",
+    label: "Build Your Application",
+    icon: DescriptionIcon,
+    color: "#2563eb",
+  },
   { href: "/mentor", label: "Ask a Mentor", icon: ChatIcon, color: "#9333ea" },
   { href: "/blog", label: "Blog", icon: BookIcon, color: "#4f46e5" },
-  { href: "/parents", label: "Parents & Supporters", icon: PeopleIcon, color: "#16a34a" },
+  {
+    href: "/parents",
+    label: "Parents & Supporters",
+    icon: PeopleIcon,
+    color: "#16a34a",
+  },
 ];
 
 export function Navigation() {
@@ -40,7 +56,7 @@ export function Navigation() {
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('lg'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
   const handleNavigation = (href: string) => {
     router.push(href);
@@ -65,20 +81,20 @@ export function Navigation() {
                   mx: 1,
                   mb: 0.5,
                   borderRadius: 2,
-                  backgroundColor: isActive ? 'grey.900' : 'transparent',
-                  color: isActive ? 'white' : 'text.secondary',
-                  '&:hover': {
-                    backgroundColor: isActive ? 'grey.900' : 'grey.50',
-                    color: isActive ? 'white' : 'text.primary',
+                  backgroundColor: isActive ? "grey.900" : "transparent",
+                  color: isActive ? "white" : "text.secondary",
+                  "&:hover": {
+                    backgroundColor: isActive ? "grey.900" : "grey.50",
+                    color: isActive ? "white" : "text.primary",
                   },
                 }}
               >
                 <Icon sx={{ mr: 2, fontSize: 20 }} />
-                <ListItemText 
+                <ListItemText
                   primary={item.label}
                   primaryTypographyProps={{
                     fontWeight: 500,
-                    fontSize: '0.875rem',
+                    fontSize: "0.875rem",
                   }}
                 />
               </ListItemButton>
@@ -90,52 +106,54 @@ export function Navigation() {
   );
 
   return (
-    <AppBar 
-      position="sticky" 
+    <AppBar
+      position="sticky"
       elevation={0}
       sx={{
-        backgroundColor: 'rgba(255, 255, 255, 0.95)',
-        backdropFilter: 'blur(12px)',
-        borderBottom: '1px solid',
-        borderColor: 'grey.100',
+        backgroundColor: "rgba(255, 255, 255, 0.95)",
+        backdropFilter: "blur(12px)",
+        borderBottom: "1px solid",
+        borderColor: "grey.100",
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar sx={{ justifyContent: 'space-between', px: { xs: 2, sm: 3 } }}>
+        <Toolbar sx={{ justifyContent: "space-between", px: { xs: 2, sm: 3 } }}>
           {/* Logo */}
-          <Box 
-            sx={{ display: 'flex', alignItems: 'center', gap: 1.5, cursor: 'pointer' }}
-            onClick={() => handleNavigation('/')}
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1.5,
+              cursor: "pointer",
+            }}
+            onClick={() => handleNavigation("/")}
           >
             <Box
               sx={{
-                width: 32,
-                height: 32,
-                background: 'linear-gradient(135deg, #0d9488 0%, #9333ea 100%)',
-                borderRadius: 2,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                width: 100,
+                height: 100,
+                
+                borderRadius: 10,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                overflow: "hidden",
               }}
             >
-              <Typography
-                sx={{
-                  color: 'white',
-                  fontWeight: 700,
-                  fontSize: '0.875rem',
-                }}
-              >
-                BR
-              </Typography>
+              <img
+                src={BuildRNMD.src}
+                alt="BuildRNMD Logo"
+                className="w-20 h-20 object-contain"
+              />
             </Box>
             <Typography
               variant="h6"
               sx={{
                 fontWeight: 700,
-                background: 'linear-gradient(90deg, #0d9488 0%, #9333ea 100%)',
-                backgroundClip: 'text',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
+                background: "linear-gradient(90deg, #0d9488 0%, #9333ea 100%)",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
               }}
             >
               BuildRNMD
@@ -143,7 +161,7 @@ export function Navigation() {
           </Box>
 
           {/* Desktop Navigation */}
-          <Box sx={{ display: { xs: 'none', lg: 'flex' }, gap: 0.5 }}>
+          <Box sx={{ display: { xs: "none", lg: "flex" }, gap: 0.5 }}>
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -154,14 +172,14 @@ export function Navigation() {
                     px: 2,
                     py: 1,
                     borderRadius: 2,
-                    textTransform: 'none',
+                    textTransform: "none",
                     fontWeight: 500,
-                    fontSize: '0.875rem',
-                    color: isActive ? 'white' : 'text.secondary',
-                    backgroundColor: isActive ? 'grey.900' : 'transparent',
-                    '&:hover': {
-                      backgroundColor: isActive ? 'grey.900' : 'grey.50',
-                      color: isActive ? 'white' : 'text.primary',
+                    fontSize: "0.875rem",
+                    color: isActive ? "white" : "text.secondary",
+                    backgroundColor: isActive ? "grey.900" : "transparent",
+                    "&:hover": {
+                      backgroundColor: isActive ? "grey.900" : "grey.50",
+                      color: isActive ? "white" : "text.primary",
                     },
                   }}
                 >
@@ -176,9 +194,9 @@ export function Navigation() {
             color="inherit"
             edge="end"
             onClick={handleDrawerToggle}
-            sx={{ 
-              display: { lg: 'none' },
-              color: 'text.primary',
+            sx={{
+              display: { lg: "none" },
+              color: "text.primary",
             }}
           >
             <MenuIcon />
@@ -195,9 +213,9 @@ export function Navigation() {
           keepMounted: true, // Better mobile performance
         }}
         sx={{
-          display: { xs: 'block', lg: 'none' },
-          '& .MuiDrawer-paper': { 
-            boxSizing: 'border-box',
+          display: { xs: "block", lg: "none" },
+          "& .MuiDrawer-paper": {
+            boxSizing: "border-box",
             width: 280,
           },
         }}

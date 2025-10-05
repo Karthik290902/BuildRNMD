@@ -1,5 +1,5 @@
 import React from 'react';
-
+import BuildRNMD from '../../public/BuildRNMD.jpeg';
 export const Footer = () => {
   return (
     <footer className="bg-gray-50 border-t border-gray-200 mt-24">
@@ -9,8 +9,8 @@ export const Footer = () => {
           {/* Brand Section */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">BR</span>
+              <div className="w-35 h-35 bg-[#38B6FF] rounded-xl flex items-center justify-center">
+                <img src={BuildRNMD.src} alt="BuildRNMD Logo" className="w-30 h-30 object-contain" />
               </div>
               <div>
                 <h3 className="font-bold text-gray-900 text-lg">BuildRNMD</h3>
@@ -27,22 +27,22 @@ export const Footer = () => {
             <h4 className="font-bold text-gray-900 mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
+                <a href="/careers" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
                   Explore Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
+                <a href="/toolkit" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
                   Application Toolkit
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
+                <a href="/mentor" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
                   Ask a Mentor
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
+                <a href="/blog" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
                   Blog
                 </a>
               </li>
@@ -69,7 +69,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
+                <a href="/parents" className="text-gray-600 hover:text-cyan-600 transition-colors duration-200 text-sm">
                   Parents Guide
                 </a>
               </li>

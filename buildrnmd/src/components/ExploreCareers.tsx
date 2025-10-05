@@ -293,7 +293,7 @@ const ExploreCareers: React.FC = () => {
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Explore Healthcare Careers
             </span>{" "}
-            <span className="text-4xl">✨</span>
+            <span className="text-8xl">✨</span>
           </h1>
           <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8 mt-20">
             Discover the{" "}

@@ -159,7 +159,7 @@ export const HomePage = () => {
               onClick={() => router.push("/careers")}
               className="inline-flex items-center gap-2 text-pink-500 font-semibold group-hover:gap-3 transition-all duration-300 group-hover:underline"
             >
-              <span>Explore Now</span>
+              <span className="cursor-pointer">Explore Now</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
@@ -196,7 +196,7 @@ export const HomePage = () => {
               onClick={() => router.push("/toolkit")}
               className="inline-flex items-center gap-2 text-blue-600 font-semibold group-hover:gap-3 transition-all duration-300 group-hover:underline"
             >
-              <span>Explore Now</span>
+              <span className="cursor-pointer">Explore Now</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
@@ -232,7 +232,7 @@ export const HomePage = () => {
               onClick={() => router.push("/mentor")}
               className="inline-flex items-center gap-2 text-purple-600 font-semibold group-hover:gap-3 transition-all duration-300 group-hover:underline"
             >
-              <span>Explore Now</span>
+              <span className="cursor-pointer">Explore Now</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
@@ -265,7 +265,7 @@ export const HomePage = () => {
               Free resources for students, parents, and educators
             </p>
             <button className="inline-flex items-center gap-2 text-orange-500 font-semibold group-hover:gap-3 transition-all duration-300 group-hover:underline">
-              <span>Explore Now</span>
+              <span className="cursor-pointer">Explore Now</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
@@ -297,7 +297,7 @@ export const HomePage = () => {
               onClick={() => router.push("/parents")}
               className="inline-flex items-center gap-2 text-green-600 font-semibold group-hover:gap-3 transition-all duration-300 group-hover:underline"
             >
-              <span>Explore Now</span>
+              <span className="cursor-pointer">Explore Now</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
@@ -329,7 +329,7 @@ export const HomePage = () => {
               onClick={() => router.push("/blog")}
               className="inline-flex items-center gap-2 text-indigo-600 font-semibold group-hover:gap-3 transition-all duration-300 group-hover:underline"
             >
-              <span>Explore Now</span>
+              <span className="cursor-pointer">Explore Now</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"

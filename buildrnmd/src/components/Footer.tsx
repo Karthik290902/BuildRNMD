@@ -2,7 +2,7 @@ import React from 'react';
 import BuildRNMD from '../../public/BuildRNMD.jpeg';
 export const Footer = () => {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 mt-24">
+    <footer className="bg-gray-50 border-t border-gray-200 ">
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

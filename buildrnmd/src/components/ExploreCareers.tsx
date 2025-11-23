@@ -17,6 +17,15 @@ interface CareerCardProps {
   image: string;
 }
 
+interface ColorStyles {
+  border: string;
+  duration: string;
+  button: string;
+  educationBg: string;
+  educationText: string;
+}
+
+
 // Reusable Career Card
 const CareerCard: React.FC<CareerCardProps> = ({
   title,
@@ -33,7 +42,7 @@ const CareerCard: React.FC<CareerCardProps> = ({
 }) => {
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const colorClasses: Record<ColorOption, any> = {
+  const colorClasses: Record<ColorOption, ColorStyles> = {
     pink: {
       border: "border-pink-400",
       duration: "bg-pink-500",

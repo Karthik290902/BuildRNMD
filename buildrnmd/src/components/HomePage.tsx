@@ -291,7 +291,7 @@ export const HomePage = () => {
               Parent Info
             </h3>
             <p className="text-gray-600 mb-6">
-              Support your teen's healthcare career journey
+              Support your teen&apos;s healthcare career journey
             </p>
             <button
               onClick={() => router.push("/parents")}

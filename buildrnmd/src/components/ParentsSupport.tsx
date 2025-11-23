@@ -19,8 +19,8 @@ export const ParentsSupport = () => {
         <span className="text-8xl">💚</span>
       </h1>
       <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-8 mt-20">
-        Supporting your teen's healthcare career journey requires understanding
-        the pathways, timelines, and challenges ahead. We're here to help you{" "}
+        Supporting your teen&apos;s healthcare career journey requires understanding
+        the pathways, timelines, and challenges ahead. We&apos;re here to help you{" "}
         <span className="font-semibold bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
           navigate this colorful journey together!
         </span>{" "}
